@@ -45,11 +45,6 @@ superstore['day_ship'] = superstore['Ship Date'].dt.day
 superstore['month_ship'] = superstore['Ship Date'].dt.month
 superstore['year_ship'] = superstore['Ship Date'].dt.year
 nan_superstore = superstore[superstore.isna().any(axis=1)]
-
-
-
-
-
 superstore["Ship Mode"].value_counts().plot(kind="bar")
 superstore["Segment"].value_counts().plot(kind="pie",autopct="%1.1f%%")
 plt.show
@@ -229,11 +224,9 @@ plt.title(f"Top-Selling Subcategories in {main_category}")
 plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
 plt.tight_layout()
 plt.show()
-'''
-'''
-# ... (rest of your code)
+#
 
-# Choose a specific year (replace with your desired year)
+# Choose a specific year
 year_to_analyze = 2015
 
 # Filter data for the chosen year
@@ -273,5 +266,4 @@ plt.legend(title='Category', loc='upper left', bbox_to_anchor=(1.05, 1))  # Adju
 plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
 plt.tight_layout()
 plt.show()
-
-# ... (rest of your code)
+#
